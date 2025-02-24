@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">VideoAppVK</string>
+    <string name="retry">Повторить</string>
+    <string name="error_loading">Ошибка загрузки данных</string>
+    <string name="search">Поиск...</string>
+    <string name="checkConnection">Проверьте подключение интернета!</string>
+</resources>

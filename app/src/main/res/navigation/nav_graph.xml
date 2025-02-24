@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/videoListFragment">
+
+    <fragment
+        android:id="@+id/videoListFragment"
+        android:name="com.example.videoappvk.videolist.VideoListFragment"
+        android:label="Video List"
+        tools:layout="@layout/fragment_video_list">
+        <action
+            android:id="@+id/action_videoListFragment_to_videoScreenFragment"
+            app:destination="@id/videoScreenFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/videoScreenFragment"
+        android:name="com.example.videoappvk.videoscreen.VideoScreenFragment"
+        android:label="Video Player"
+        tools:layout="@layout/fragment_video_screen">
+
+        <argument
+            android:name="videoUrl"
+            android:defaultValue=""
+            app:argType="string" />
+
+    </fragment>
+</navigation>
